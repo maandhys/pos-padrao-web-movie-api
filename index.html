@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>TV Show</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/orkney" type="text/css" />
+    <link rel="shortcut icon" href="icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body onload="trending()">
+    <header>
+        <nav>
+            <section id="menu">
+              <h1 style="color: #9392d4">THE MOVIE DATABASE API<h1>
+        </nav>
+        <div id="divSearch" class="input-group col-xs-4">
+            <input class='form-control' type='text' name='search' id="searchBox" placeholder="Informe o nome do Programa de TV e clique na lupa"/>
+            <span class="input-group-btn">
+                <button type='submit' class='btn btn-default'>
+                    <i class="bi bi-search bnt" id="bntSearch"></i>
+                </button>
+            </span>
+        </div>
+    </header>
+
+    <main>
+        <!-- section com os resultados da busca do usuário -->
+        <section id="clientSearch">
+            <div class="row"></div>
+        </section>
+
+        <div class="row">
+            <div class="col-sm ">
+                <h1 class="destaque">Tendências Diárias</h1>
+            </div>
+        </div>
+        <!-- section o resultado dos treding do dia -->
+        <section id="destaque">
+            <br>
+        </section>
+
+        <br><br>
+        <section id="sobre">
+            
+             <div class="container"> 
+                <div class="row">
+                    
+
+                    <div class="col-sm">
+                        <h3>Sobre </h3>
+                        <medium>Trabalho Final da disciplina Padrões Web.Requisitos do Projeto
+                            O site que você fará deve atender aos seguintes requisitos: 
+                            
+                            o site deve ser publicado em um ambiente da Internet (Repl.it, GitHub Pages, Heroku, Netlify ou outro a sua escolha); 
+                            o site deverá ser responsivo permitindo a visualização em um celular de forma adequada;
+                            o site deve ter uma Home-Page (index.html) com a listagem dinâmica de filmes/séries obtidos via API The Movie DB à escolha do aluno que pode ser qualquer das alternativas como: (1) filmes populares, (2) filmes no cinema, (3) séries de TV ou outra listagem a ser projetada pelo aluno a partir da mesma API. Nessa página inicial, devem ser obedecidos os seguintes requisitos:
+                            para cada item da listagem devem ser exibidos um mínimo de três (3) dados textuais obtidos por meio da API que descrevam sucintamente o referido item (Ex: título, data, descrição, categoria, etc);
+                            para cada item da listagem, deve ser exibida uma imagem ilustrativa do referido item;
+                            para cada item da listagem, deve haver um link que leve o usuário para uma Página de Detalhes do filme/serie (detalhes.html) com mais informações sobre o item.
+                            o site deve apresentar uma Página de pesquisa (pesquisa.html) ou funcionalidade integrada à home-page no cabeçalho que permita ao usuário informar um texto e localizar informações providas pela API do The Movie DB que devem ser apresentadas como resultado da pesquisa. 
+                            Na página de pesquisa, devem ser obedecidos os seguintes requisitos:
+                            o resultado da pesquisa poderá ser paginado ou não;
+                            o resultado deve mostrar uma lista de itens tal qual a home-page com imagem e textos que descrevam o item retornado;
+                            os itens do resultado devem ter um link que ao ser acionado, leve o usuário para a página original do referido item, cujo link é obtido por meio da API do The Movie DB.<medium>
+                                <br />
+                                <h3>  </h3>
+                                <p>
+                                    <i class="bi bi-person-circle" style="color: #9392d4;"></i>
+                                    <strong> Code:</strong> Nayara Pimentel
+                                </p>
+                                <p>
+                                    <i class="bi bi-person-circle" style="color: #9392d4;"></i>
+                                    <strong> Pesquisa:</strong> Nayara Pimentel
+                                </p>
+                                <p>
+                                    <i class="bi bi-person-circle" style="color: #9392d4;"></i>
+                                    <strong> Testes:</strong> Nayara Pimentel
+                                </p>
+                                <br />
+
+                                <h3> Redes Sociais </h3>
+
+                                <i class="bi bi-twitter" style="color: #2196f3;"></i>
+                                <i class="bi bi-facebook" style="color: #304adc;"></i>
+                                <i class="bi bi-instagram" style="color:#d21fd7;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+    </main>
+    <footer>Copright &copy; Desenvolvido por:
+        <span>Nayara Ariane Pimentel</span>
+        <br />
+        <a href="#top" id="topo">
+            <i class="bi bi-arrow-up" style="color: #9392d4;"></i>
+        </a>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="tvshow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+html {
+  /* background-color: lightgrey; */
+  font-family: "Verdana";
+}
+
+body{
+  /* width: 90%; */
+  margin: 15px;
+  background-color:white;
+  border-radius: 5px;
+ 
+}
+
+@media screen and (max-width: 800px) {
+body {width: 90%}
+}
+
+header{
+  border-bottom:1px solid black;
+  color: #9392d4;
+  text-align: center;
+}
+
+footer{color: #333; padding: 20px 0px; text-align: center;}
+footer span{font-style: italic; color: black}
+
+#backdrop {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  /* width: 100%; 
+  height: 100%; */
+}
+
+#details { 
+  border-bottom:1px solid #9392d4;
+  margin-top: 10px;
+}
+
+.card-img-top {
+  border-radius: 5px;
+  width: 50%;
+  margin: auto; 
+  display: block;
+}
